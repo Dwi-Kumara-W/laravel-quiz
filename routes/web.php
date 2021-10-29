@@ -14,7 +14,6 @@ Route::prefix('barang')->name('barang.')->group(function(){
     Route::post('postubah', [BarangController::class, 'update'])->name('postubah');
     Route::get('cari',[BarangController::class, 'cari'])->name('cari');
     Route::get('hapus/{id_barang}', [BarangController::class, 'destroy'])->name('hapus');
-    // Route::get('checkout/{id_barang}', [KeranjangController::class, 'edit'])->name('checkout');
 });
 
 Route::prefix('order')->name('order.')->group(function(){
